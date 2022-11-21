@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Templates</title>
+</head>
+<body>
+    <h3>Hola Mi Nombre Es {{.Name}}</h3>
+
+    <!-- {{if .Activo}}
+    <p>El usuario esta activo</p>
+    {{else}}
+    <p>El usuario no esta activo</p>
+    {{ end }} -->
+
+
+    <!-- ge si el usuario es mayor o igual -->
+<!-- 
+    {{if (ge .Edad 19)}}
+      <p>El usuario es mayor</p>
+    {{end}} -->
+
+     <!-- or o si no -->
+     <!-- {{if (or .Edad 19)}}
+     <p>El usuario es mayor</p>
+      {{end}} -->
+
+     <!-- gt si el usuario es mayor  -->
+<!-- 
+     {{if (gt .Edad 19)}}
+     <p>El usuario es mayor</p>
+      {{end}} -->
+
+   <!-- lt si el usuario es menor -->
+<!-- 
+    {{if (lt .Edad 19)}}
+      <p>El usuario es menor</p>
+    {{end}} -->
+
+    <!-- le si el usuario es menor o igual -->
+<!-- 
+    {{if (le .Edad 19)}}
+     <p>El usuario es mayor</p>
+    {{end}} --> 
+
+    <!-- Como recorrer un array -->
+    <!-- {{range .Array}}
+      <li>{{.}}</li>
+    {{end}} -->
+
+    <!-- Variables-->
+    <p>variables</p>
+    {{with $valor := "Hola"}}
+  
+      {{$valor}}
+  
+    {{end}}
+    
+<!-- 
+    {{range .Cursos}}
+      <li>el curso es y su precios es{{.Name}} {{.Price}}</li>
+    {{end}} -->
+
+
+
+</body>
+</html>
